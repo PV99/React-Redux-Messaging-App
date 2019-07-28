@@ -1,7 +1,7 @@
-const shortid = require("shortid"); // shortid.generate() returns a unique "short" id
-const txtgen = require("txtgen"); // txtgen.sentence() returns random "readable" sentences
-const faker = require("faker"); // faker is used for generating random fake data.
-const _ = require("lodash"); // lodash is a utility lib for Javascript
+const shortid = require("shortid");
+const txtgen = require("txtgen");
+const faker = require("faker");
+const _ = require("lodash");
 
 const users = generateUsers(10);
 export const contacts = _.mapKeys(users, "user_id");
@@ -15,7 +15,7 @@ export const getMessages = messagesPerUser => {
   return messages;
 };
 
-// just an example of how the state object is structured
+
 export const state = {
   user: generateUser(),
   messages: getMessages(10),
