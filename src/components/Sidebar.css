@@ -1,0 +1,26 @@
+.Sidebar {
+  width: 80px;
+  background-color: rgba(32, 32, 35, 1);
+  height: 100%;
+  border-right: 1px solid rgba(189, 189, 192, 0.1);
+  transition: width 0.3s;
+  overflow-y: auto;
+  position: relative;
+  
+} 
+.Contacts { 
+  position: sticky;
+  top: 0;
+  font-size: 1.5rem;
+  height: 4rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(32, 32, 35, 1);
+}
+/* not small devices  */
+@media (min-width: 576px) {
+  .Sidebar {
+    width: 280px;
+  }
+}
